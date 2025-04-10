@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing - Online Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">Online Library</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+    <nav id="nav">
+        <a href="login.jsp">Login</a>
+    </nav>
+</header>
+<section class="welcome-section">
+    <h1>Welcome to the Online Library</h1>
+    <p>Explore a world of knowledge. Discover, read, and rent books online.</p>
+    <a href="login.jsp"><button>Login</button></a>
+</section>
+<footer>&copy; 2025 Online Library. All rights reserved.</footer>
+<script>
+    function toggleMenu() {
+        document.getElementById('nav').classList.toggle('active');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center/cover;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: fadeInDown 1.2s ease-out;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  animation: fadeIn 1.2s ease-in;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* Welcome Section Styling */
+.welcome-section {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4rem 2rem;
+  text-align: center;
+  margin: 4rem auto;
+  max-width: 600px;
+  border-radius: 10px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.about-section {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 4rem 2rem;
+  text-align: center;
+  margin: 4rem auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.about-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* About Page Styling */
+.about-section h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* Login Page */
+.login-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  animation: fadeIn 1.2s ease-in;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+  animation: fadeInUp 1.2s ease-out;
+}
+button:hover {
+  background-color: #e6b800;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  gap: 5px;
+  animation: fadeIn 1.2s ease-in;
+}
+
+/* Book Cards */
+.book-suggestions {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 2rem auto;
+  border-radius: 10px;
+  max-width: 1000px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.book-suggestions h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.book-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.book-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.book-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.profile-banner {
+    background-image: url('https://images.unsplash.com/photo-1533743991567-b9f7f0798e3f');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    position: relative;
+}
+
+.profile-info {
+    background-color: rgba(0, 0, 0, 0.5); /* 50% transparency */
+    padding: 2rem;
+    width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+  animation: fadeIn 1.2s ease-in;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

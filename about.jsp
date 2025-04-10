@@ -1,0 +1,44 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Online Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">Online Library</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+    <nav id="nav">
+        <a href="home.jsp">Home</a>
+        <a href="about.jsp">About</a>
+        <a href="user.jsp">User</a>
+    </nav>
+</header>
+  <section class="about-section">
+    <h1>About Our Online Library</h1>
+    <p>Welcome to our Online Library! Our mission is to provide easy access to a wide variety of books and resources to support learning, creativity, and personal growth. Whether you're looking for fiction, non-fiction, academic papers, or reference materials, our library is here to offer you a world of knowledge at your fingertips.</p>
+    <h2>Our Features:</h2>
+    <ul>
+      <li>Access thousands of books across various genres.</li>
+      <li>Read books online or download them for offline reading.</li>
+      <li>Personalized recommendations based on your reading preferences.</li>
+      <li>Manage your book collection with a user-friendly interface.</li>
+      <li>Join a community of readers and share book reviews.</li>
+    </ul>
+    <h2>Our Vision:</h2>
+    <p>Our vision is to foster a global reading community, where knowledge is freely accessible to everyone. We believe in the power of books to transform lives and build a better future.</p>
+    <h2>Contact Us:</h2>
+    <p>If you have any questions or suggestions, feel free to reach out to us at <strong>contact@onlinelibrary.com</strong>.</p>
+  </section>
+<footer>&copy; 2025 Online Library. All rights reserved.</footer>
+<script>
+    function toggleMenu() {
+        document.getElementById('nav').classList.toggle('active');
+    }
+</script>
+</body>
+</html>
